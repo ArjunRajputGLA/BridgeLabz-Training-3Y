@@ -1,0 +1,165 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Gradient background for consistent theme */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    
+    /* Center form vertically and horizontally using flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contact Container */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    
+    /* Center horizontally */
+    margin: 0 auto;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+}
+
+/* Form Group - Spacing between fields */
+.form-group {
+    margin-bottom: 25px; /* Spacing using margins */
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+/* Input Styles with padding, border-radius, and shadows */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px; /* Padding for comfortable input */
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    
+    /* Border and border-radius */
+    border: 2px solid #e0e0e0;
+    border-radius: 8px; /* Rounded corners */
+    
+    /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    
+    /* Smooth transition for focus effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Background and text color for consistent theme */
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* Focus state - Change border color */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea; /* Border color changes on focus */
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.2);
+    background-color: white;
+}
+
+/* Textarea specific styling */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    
+    /* Background color for theme */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-wrapper {
+        padding: 40px 30px;
+    }
+    
+    .form-wrapper h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .form-wrapper h1 {
+        font-size: 1.8rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+}

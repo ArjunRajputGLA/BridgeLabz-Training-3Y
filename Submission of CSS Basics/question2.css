@@ -1,0 +1,150 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 5px solid #764ba2;
+}
+
+header h1 {
+    font-size: 3.5rem; /* Different font size */
+    font-weight: 700; /* Different font weight */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 300; /* Different font weight */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #34495e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500; /* Different font weight */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Main Section Styles */
+main {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    padding: 80px 20%; /* Padding for spacing */
+    margin: 0; /* No margins to ensure full width */
+    border-bottom: 2px solid #ddd; /* Border for section definition */
+}
+
+.section h2 {
+    font-size: 2.5rem; /* Different font size */
+    font-weight: 600; /* Different font weight */
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* Margins for spacing between paragraphs */
+    text-align: justify;
+}
+
+/* Introduction Section - Linear Gradient Background */
+.intro-section {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
+}
+
+/* History Section - Parallax Effect with Fixed Background */
+.history-section {
+    background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Culture Section - Radial Gradient Background */
+.culture-section {
+    background: radial-gradient(circle, #e0c3fc 0%, #8ec5fc 100%);
+    color: #333;
+}
+
+/* Attractions Section - Parallax Effect with Fixed Background */
+.attractions-section {
+    background-image: url('https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 4px solid #34495e;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 10%;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

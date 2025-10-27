@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+/* Flexbox Layout - 3 columns in one row */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap;
+}
+
+/* Team Card Styles - Using Box Model Properties */
+.team-card {
+    /* Box Model: content + padding + border + margin */
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background-color: #ffffff;
+    
+    /* Padding - space inside the card */
+    padding: 30px;
+    
+    /* Margin - space outside the card */
+    margin: 10px;
+    
+    /* Border - outline around the card */
+    border: 2px solid #e0e0e0;
+    
+    /* Rounded corners */
+    border-radius: 15px;
+    
+    /* Shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlighted Team Lead Card - Different background and border */
+.team-lead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 3px solid #5a67d8; /* Different border style */
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+}
+
+.team-lead h2,
+.team-lead h3 {
+    color: white;
+}
+
+.team-lead p {
+    color: #f0f0f0;
+}
+
+/* Card Image */
+.card-image {
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+}
+
+.team-lead .card-image img {
+    border-color: white;
+}
+
+/* Card Text Styles */
+.team-card h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.team-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Layout - Single column on screens smaller than 600px */
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-card {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 900px) {
+    .team-container {
+        justify-content: space-around;
+    }
+    
+    .team-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
