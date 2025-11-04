@@ -1,0 +1,87 @@
+<!-- Task 6 (Bonus): Mini Responsive Website
+  Combine all the above features into one page:
+  Header + Navigation
+  Hero Section
+  Blog / Card Section
+  Contact Form
+  Footer
+  Fully responsive using CSS only -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Responsive Site</title>
+  <link rel="stylesheet" href="Task6.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <h1 class="logo">MySite</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>Simple, Responsive Design</h2>
+      <p>Lightweight example combining header, hero, cards and a contact form — all responsive with CSS.</p>
+      <a class="cta" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="blog" class="cards">
+      <article class="card">
+        <img src="https://picsum.photos/600/400?random=10" alt="post 1">
+        <h3>Post One</h3>
+        <p>Short description for the first post. Clean and simple.</p>
+        <a class="btn" href="#">Read</a>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/600/400?random=11" alt="post 2">
+        <h3>Post Two</h3>
+        <p>Another quick summary. Responsive cards use grid layout.</p>
+        <a class="btn" href="#">Read</a>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/600/400?random=12" alt="post 3">
+        <h3>Post Three</h3>
+        <p>A concise caption. The layout adapts to small screens.</p>
+        <a class="btn" href="#">Read</a>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>&copy; 2025 MySite — Responsive demo</p>
+    </div>
+  </footer>
+</body>
+</html> 

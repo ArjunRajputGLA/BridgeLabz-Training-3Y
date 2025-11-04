@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="responsive-css-cheat-sheet.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive CSS Cheat Sheet</h1>
+    </header>
+
+    <main class="cheat-sheet">
+        <section class="topic-box">
+            <h2>CSS Filters</h2>
+            <p>Apply visual effects to elements like blur, grayscale, brightness, and more.</p>
+            <code>filter: blur(5px);</code>
+        </section>
+
+        <section class="topic-box">
+            <h2>Media Queries</h2>
+            <p>Apply styles based on device characteristics like screen width.</p>
+            <code>@media (max-width: 768px) { ... }</code>
+        </section>
+
+        <section class="topic-box">
+            <h2>Responsive Design</h2>
+            <p>Create layouts that adapt to different screen sizes using flexible units.</p>
+            <code>width: 100%; max-width: 1200px;</code>
+        </section>
+
+        <section class="topic-box">
+            <h2>Typography</h2>
+            <p>Use clamp() for fluid typography that scales smoothly.</p>
+            <code>font-size: clamp(1rem, 2vw, 2rem);</code>
+        </section>
+
+        <section class="topic-box">
+            <h2>Flexbox</h2>
+            <p>One-dimensional layout method for arranging items in rows or columns.</p>
+            <code>display: flex; gap: 20px;</code>
+        </section>
+
+        <section class="topic-box">
+            <h2>CSS Grid</h2>
+            <p>Two-dimensional layout system for creating complex responsive layouts.</p>
+            <code>display: grid; grid-template-columns: repeat(3, 1fr);</code>
+        </section>
+    </main>
+</body>
+</html>

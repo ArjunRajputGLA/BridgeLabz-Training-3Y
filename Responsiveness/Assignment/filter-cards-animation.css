@@ -1,0 +1,96 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Card Container with Flexbox */
+.card-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Profile Card Styles with Fade-in Animation */
+.profile-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Keyframe Animation for Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image with Filter */
+.profile-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+/* Hover Effect: Remove Filter and Lift Card */
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card:hover img {
+    filter: none;
+}
+
+.profile-card h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    color: #666;
+}
+
+/* Responsive: Stack Vertically Below 800px */
+@media (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        max-width: 100%;
+    }
+}

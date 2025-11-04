@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Responsive Web Demo</title>
+    <link rel="stylesheet" href="combined-responsive-demo.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <div class="logo">WebDemo</div>
+        <nav class="nav">
+            <a href="#gallery">Gallery</a>
+            <a href="#info">Info</a>
+            <a href="#cheatsheet">Cheat Sheet</a>
+        </nav>
+    </header>
+
+    <!-- Main Content with Grid -->
+    <main class="main-grid">
+        <!-- Image Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://picsum.photos/300/200?random=20" alt="Image 1">
+                <img src="https://picsum.photos/300/200?random=21" alt="Image 2">
+                <img src="https://picsum.photos/300/200?random=22" alt="Image 3">
+            </div>
+        </section>
+
+        <!-- Responsive Design Explanation -->
+        <section id="info" class="info-section">
+            <h2>Responsive Design</h2>
+            <p>Responsive web design is an approach that makes web pages render well on various devices and screen sizes. It uses flexible layouts, images, and CSS media queries to adapt content to different viewing environments.</p>
+        </section>
+
+        <!-- Cheat Sheet Preview -->
+        <section id="cheatsheet" class="cheatsheet-section">
+            <h2>Quick Reference</h2>
+            <ul>
+                <li><strong>Flexbox:</strong> display: flex;</li>
+                <li><strong>Grid:</strong> display: grid;</li>
+                <li><strong>Media Query:</strong> @media (max-width: 768px)</li>
+                <li><strong>Clamp:</strong> font-size: clamp(1rem, 2vw, 2rem);</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Combined Responsive Demo | All techniques integrated</p>
+    </footer>
+</body>
+</html>

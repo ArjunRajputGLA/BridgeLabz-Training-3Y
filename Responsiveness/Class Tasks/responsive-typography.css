@@ -1,0 +1,26 @@
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+padding: 20px;
+font-size: 16px; /* Default mobile font */
+}
+/* Tablet view */
+@media (min-width: 768px) {
+body {
+font-size: 18px;
+}
+}
+/* Desktop view */
+@media (min-width: 1024px) {
+body {
+font-size: 20px;
+}
+}
+h1 {
+font-size: 1.8em;
+}
+p {
+max-width: 700px;
+margin: auto;
+} 

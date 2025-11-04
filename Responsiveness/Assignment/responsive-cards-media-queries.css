@@ -1,0 +1,78 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Card Container with Flexbox */
+.card-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Hover Effect: Change Background Color */
+.card:hover {
+    background-color: #e3f2fd;
+}
+
+/* Tablet: 2 Columns Below 900px */
+@media (max-width: 900px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+/* Mobile: 1 Column Below 600px */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1;
+    }
+}
