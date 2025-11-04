@@ -1,0 +1,98 @@
+<!-- Task 4 CSS Selectors Practice Page
+Demonstrate selectors: element, class, ID, attribute, combinators (>, +, ~, descendant).
+Use real tags (p, ul, a, etc.) + CSS comments to explain.
+Structured with heading and footer. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="Task4.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+        <h1>Demonstrating different CSS selectors</h1>
+    </header>
+
+    <main>
+        <!-- Element Selector -->
+        <section>
+            <h2>Element Selector</h2>
+            <p>This paragraph is styled using element selector.</p>
+            <p>All paragraphs get the same style.</p>
+        </section>
+
+        <!-- Class Selector -->
+        <section>
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph has a class "highlight".</p>
+            <p class="highlight">Multiple elements can share the same class.</p>
+        </section>
+
+        <!-- ID Selector -->
+        <section>
+            <h2>ID Selector</h2>
+            <p id="unique">This paragraph has a unique ID "unique".</p>
+        </section>
+
+        <!-- Attribute Selector -->
+        <section>
+            <h2>Attribute Selector</h2>
+            <a href="https://example.com" target="_blank" rel="noopener">External Link</a>
+            <a href="#home">Internal Link</a>
+            <input type="text" placeholder="Text Input">
+            <input type="email" placeholder="Email Input">
+        </section>
+
+        <!-- Descendant Combinator -->
+        <section>
+            <h2>Descendant Combinator (space)</h2>
+            <div class="container">
+                <p>This paragraph is inside container.</p>
+                <div>
+                    <p>This nested paragraph is also styled.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Child Combinator -->
+        <section>
+            <h2>Child Combinator (>)</h2>
+            <ul class="parent">
+                <li>Direct child - styled</li>
+                <li>Direct child - styled</li>
+                <ul>
+                    <li>Nested child - not styled</li>
+                </ul>
+            </ul>
+        </section>
+
+        <!-- Adjacent Sibling Combinator -->
+        <section>
+            <h2>Adjacent Sibling Combinator (+)</h2>
+            <h3>Heading</h3>
+            <p>This paragraph immediately follows h3 - styled.</p>
+            <p>This paragraph is not immediately after h3.</p>
+        </section>
+
+        <!-- General Sibling Combinator -->
+        <section>
+            <h2>General Sibling Combinator (~)</h2>
+            <h3>Another Heading</h3>
+            <p>First sibling paragraph - styled.</p>
+            <p>Second sibling paragraph - styled.</p>
+            <div>This is not a paragraph.</div>
+            <p>Third sibling paragraph - styled.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h1>&copy; 2025 CSS Selectors Practice</h1>
+        <h1>All selectors demonstrated above</h1>
+    </footer>
+</body>
+</html>

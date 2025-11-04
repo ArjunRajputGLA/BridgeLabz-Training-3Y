@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes Demo</title>
+    <link rel="stylesheet" href="Task1.css">
+</head>
+<body>
+    <h1>CSS Pseudo-Classes Demo</h1>
+
+    <!-- Links Section -->
+    <div class="demo-section">
+        <div class="example">
+            <a href="#" class="demo-link">Hover Over Me</a>
+            <a href="#" class="demo-link">Click and Hold Me</a>
+        </div>
+        <div class="explanation">
+            <h2>Links</h2>
+            <p><strong>:hover</strong> - Changes color when mouse is over the link</p>
+            <p><strong>:active</strong> - Changes color when link is clicked</p>
+        </div>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="demo-section">
+        <div class="example">
+            <button class="demo-button">Hover Me</button>
+            <button class="demo-button">Focus Me (Tab)</button>
+            <button class="demo-button">Click Me</button>
+        </div>
+        <div class="explanation">
+            <h2>Buttons</h2>
+            <p><strong>:hover</strong> - Background changes on mouse over</p>
+            <p><strong>:focus</strong> - Border appears when button is focused (use Tab key)</p>
+            <p><strong>:active</strong> - Background darkens when clicked</p>
+        </div>
+    </div>
+
+    <!-- List Items Section -->
+    <div class="demo-section">
+        <div class="example">
+            <ul class="demo-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ul>
+        </div>
+        <div class="explanation">
+            <h2>List Items</h2>
+            <p><strong>:nth-child(odd)</strong> - Light blue background for odd items (1, 3, 5)</p>
+            <p><strong>:nth-child(even)</strong> - Light coral background for even items (2, 4, 6)</p>
+            <p><strong>:hover</strong> - Darkens background when hovering over any item</p>
+        </div>
+    </div>
+
+</body>
+</html>

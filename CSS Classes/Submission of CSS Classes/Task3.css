@@ -1,0 +1,98 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gallery Item */
+.gallery-item {
+    text-align: center;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+/* Caption Styles */
+figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsive Design - Stack in one column below 700px */
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

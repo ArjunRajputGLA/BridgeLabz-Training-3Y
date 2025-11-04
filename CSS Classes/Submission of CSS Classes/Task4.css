@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Element Selector - Targets all p elements */
+p {
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Class Selector - Targets elements with class="highlight" */
+.highlight {
+    background-color: #f39c12;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ID Selector - Targets element with id="unique" */
+#unique {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Attribute Selector - Targets links with target="_blank" */
+a[target="_blank"] {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ecf0f1;
+    border-radius: 3px;
+}
+
+a {
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+/* Child Combinator (>) - Targets direct children only */
+.parent > p {
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Adjacent Sibling (+) - Targets element immediately after h3 */
+h3 + p {
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+}
+
+/* General Sibling (~) - Targets all siblings after h3 */
+.sibling-test h3 ~ p {
+    border-left: 4px solid #e67e22;
+    padding-left: 15px;
+}
+
+/* Descendant Selector - Targets all li inside .menu */
+.menu li {
+    background-color: #3498db;
+    color: white;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 3px;
+    list-style: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

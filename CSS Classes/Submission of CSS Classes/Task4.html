@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="Task4.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+    </header>
+    
+    <main>
+        <!-- Element Selector Example -->
+        <section>
+            <h2>Element Selector</h2>
+            <p>This paragraph is styled using element selector (p)</p>
+            <p>All paragraphs have the same base styling</p>
+        </section>
+
+        <!-- Class Selector Example -->
+        <section>
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph uses class selector (.highlight)</p>
+            <p class="highlight">Multiple elements can share the same class</p>
+        </section>
+
+        <!-- ID Selector Example -->
+        <section>
+            <h2>ID Selector</h2>
+            <p id="unique">This paragraph uses ID selector (#unique)</p>
+        </section>
+
+        <!-- Attribute Selector Example -->
+        <section>
+            <h2>Attribute Selector</h2>
+            <a href="https://example.com" target="_blank" rel="noopener">External Link</a>
+            <a href="/internal">Internal Link</a>
+        </section>
+
+        <!-- Child Combinator (>) Example -->
+        <section>
+            <h2>Child Combinator (&gt;)</h2>
+            <div class="parent">
+                <p>Direct child paragraph</p>
+                <div>
+                    <p>Nested paragraph (not direct child)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adjacent Sibling (+) Example -->
+        <section>
+            <h2>Adjacent Sibling (+)</h2>
+            <h3>Heading</h3>
+            <p>This paragraph immediately follows h3</p>
+            <p>This paragraph does not immediately follow h3</p>
+        </section>
+
+        <!-- General Sibling (~) Example -->
+        <section>
+            <h2>General Sibling (~)</h2>
+            <div class="sibling-test">
+                <h3>Title</h3>
+                <p>Sibling paragraph 1</p>
+                <p>Sibling paragraph 2</p>
+            </div>
+        </section>
+
+        <!-- Descendant Selector Example -->
+        <section>
+            <h2>Descendant Selector</h2>
+            <ul class="menu">
+                <li>Item 1</li>
+                <li>Item 2
+                    <ul>
+                        <li>Nested Item</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Selectors Demonstration</p>
+    </footer>
+</body>
+</html>

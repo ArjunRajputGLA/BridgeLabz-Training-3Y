@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="Task8.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison Page</h1>
+    </header>
+    
+    <main>
+        <section class="comparison-container">
+            <div class="box-wrapper">
+                <h2>Default Box-Sizing</h2>
+                <div class="box default-box">
+                    <p>Content Box</p>
+                    <p class="info">Width: 300px + 40px padding = 340px total</p>
+                </div>
+                <p class="description">
+                    Default box-sizing (content-box) adds padding and border to the width, 
+                    making the total size larger than specified.
+                </p>
+            </div>
+
+            <div class="box-wrapper">
+                <h2>Border-Box Sizing</h2>
+                <div class="box border-box">
+                    <p>Border Box</p>
+                    <p class="info">Width: 300px (includes padding)</p>
+                </div>
+                <p class="description">
+                    Border-box includes padding and border within the specified width, 
+                    keeping the total size as specified.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Box-sizing property affects total element size</p>
+    </footer>
+</body>
+</html>

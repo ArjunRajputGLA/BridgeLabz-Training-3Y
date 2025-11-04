@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content - Centered */
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* Comparison Container */
+.comparison-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.box-wrapper {
+    text-align: center;
+}
+
+.box-wrapper h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Box Styles */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Default Box-Sizing (content-box) */
+.default-box {
+    box-sizing: content-box;
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Border-Box Sizing */
+.border-box {
+    box-sizing: border-box;
+    background-color: #3498db;
+    color: white;
+}
+
+/* Description Text */
+.description {
+    max-width: 300px;
+    color: #555;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .comparison-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

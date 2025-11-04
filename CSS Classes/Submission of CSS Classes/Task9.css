@@ -1,0 +1,111 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content - Centered with Flexbox */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Effects Container with Flexbox */
+.effects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Base Button Styles */
+.effect-btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effect 1: Grow & Color Change */
+.effect-1 {
+    background-color: #3498db;
+    color: white;
+}
+
+.effect-1:hover {
+    background-color: #e74c3c;
+    transform: scale(1.15);
+}
+
+/* Effect 2: Lift & Shadow */
+.effect-2 {
+    background-color: #2ecc71;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.effect-2:hover {
+    background-color: #27ae60;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Effect 3: Rotate & Glow */
+.effect-3 {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.effect-3:hover {
+    background-color: #8e44ad;
+    transform: rotate(5deg);
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.8);
+}
+
+/* Effect 4: Scale & Bounce */
+.effect-4 {
+    background-color: #f39c12;
+    color: white;
+}
+
+.effect-4:hover {
+    background-color: #e67e22;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 15px rgba(243, 156, 18, 0.5);
+}
+
+.effect-4:active {
+    transform: scale(1.05) translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

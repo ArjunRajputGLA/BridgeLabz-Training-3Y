@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* ELEMENT SELECTOR - Selects all elements of a specific type */
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* CLASS SELECTOR - Selects elements with a specific class */
+.highlight {
+    background-color: #ffeb3b;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+}
+
+/* ID SELECTOR - Selects a single element with a specific ID */
+#unique {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border: 2px solid #2196f3;
+    font-weight: bold;
+}
+
+/* ATTRIBUTE SELECTOR - Selects elements based on attributes */
+/* Select links with target attribute */
+a[target="_blank"] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Select email input type */
+input[type="email"] {
+    border: 2px solid green;
+    padding: 8px;
+    margin: 5px;
+}
+
+/* DESCENDANT COMBINATOR (space) - Selects all descendants */
+/* Selects all p elements inside .container, no matter how deep */
+.container p {
+    background-color: #ffe0b2;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* CHILD COMBINATOR (>) - Selects direct children only */
+/* Selects only direct li children of .parent */
+.parent > li {
+    background-color: #c8e6c9;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+/* ADJACENT SIBLING COMBINATOR (+) - Selects immediate next sibling */
+/* Selects p that immediately follows h3 */
+h3 + p {
+    background-color: #f8bbd0;
+    padding: 10px;
+    border-left: 4px solid #e91e63;
+}
+
+/* GENERAL SIBLING COMBINATOR (~) - Selects all following siblings */
+/* Selects all p elements that are siblings after h3 */
+h3 ~ p {
+    color: #673ab7;
+    font-style: italic;
+    padding-left: 15px;
+}
+
+/* Additional Styling */
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: square;
+}
