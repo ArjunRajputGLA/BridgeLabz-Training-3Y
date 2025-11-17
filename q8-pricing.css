@@ -1,0 +1,16 @@
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.featured-plan {
+    transform: scale(1.05);
+}
+
+.featured-plan:hover {
+    transform: scale(1.08) translateY(-10px);
+}

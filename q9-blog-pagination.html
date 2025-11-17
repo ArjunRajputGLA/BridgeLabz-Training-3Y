@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="q9-blog-pagination.css">
+</head>
+<body class="bg-light">
+    <header class="bg-info text-white text-center py-5">
+        <h1 class="display-4 fw-bold">Tech Blog</h1>
+        <p class="lead">Latest articles and insights</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Getting Started with Bootstrap 5</h3>
+                        <p class="text-muted">November 17, 2025</p>
+                        <p class="card-text">Learn the fundamentals of Bootstrap 5 and create stunning responsive websites with ease. A comprehensive guide for beginners.</p>
+                        <button class="btn btn-info text-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Modern CSS Grid Techniques</h3>
+                        <p class="text-muted">November 15, 2025</p>
+                        <p class="card-text">Explore advanced CSS Grid layouts and learn how to build complex, responsive designs without frameworks.</p>
+                        <button class="btn btn-info text-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">JavaScript ES2024 Features</h3>
+                        <p class="text-muted">November 12, 2025</p>
+                        <p class="card-text">Discover the latest JavaScript features and how they improve your development workflow and code quality.</p>
+                        <button class="btn btn-info text-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Building RESTful APIs</h3>
+                        <p class="text-muted">November 10, 2025</p>
+                        <p class="card-text">A practical guide to designing and implementing RESTful APIs with best practices and real-world examples.</p>
+                        <button class="btn btn-info text-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Blog pagination">
+            <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button class="btn btn-outline-secondary btn-lg">Older Posts</button>
+            <button class="btn btn-outline-secondary btn-lg">Newer Posts</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

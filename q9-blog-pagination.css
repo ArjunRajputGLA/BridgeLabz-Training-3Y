@@ -1,0 +1,12 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.pagination .page-link {
+    color: #0dcaf0;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="q10-travel-agency.css">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-4">
+        <h1 class="display-4 fw-bold">Wanderlust Travel</h1>
+        <p class="lead">Explore the World with Us</p>
+    </header>
+
+    <main>
+        <section class="carousel-section">
+            <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Paris">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">Paris, France</h2>
+                            <p class="fs-4">Experience the city of love and lights. Visit the Eiffel Tower, Louvre Museum, and indulge in French cuisine.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Tokyo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">Tokyo, Japan</h2>
+                            <p class="fs-4">Discover the perfect blend of ancient traditions and modern technology in Japan's bustling capital.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Bali">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">Bali, Indonesia</h2>
+                            <p class="fs-4">Relax on pristine beaches, explore ancient temples, and immerse yourself in the island's rich culture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="card shadow-lg p-5">
+                <h3 class="text-center fw-bold mb-4">Your Booking Progress</h3>
+                <p class="text-center text-muted mb-3">Complete your booking in just a few steps</p>
+                
+                <div class="progress" style="height: 30px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        70% Complete
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <p class="lead">You're almost done! Just confirm your payment details to complete your booking.</p>
+                    <button class="btn btn-success btn-lg mt-3">Continue Booking</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+            <p class="mb-1">Email: info@wanderlusttravel.com</p>
+            <p class="mb-1">Phone: +1 (555) 123-4567</p>
+            <p class="mb-3">Address: 123 Travel Street, Adventure City, AC 12345</p>
+            <p class="mb-0">&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
